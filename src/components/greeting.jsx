@@ -27,12 +27,13 @@ const Title = styled.p`
 `;
 
 const Content = styled.p`
-  font-size: 0.72rem;
+  font-size: 1.5rem;
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 16px;
   width: 100%;
   text-align: center;
+  font-family: Ownglyph_ryuttung-Rg
 `;
 
 const GroomBride = styled.p`

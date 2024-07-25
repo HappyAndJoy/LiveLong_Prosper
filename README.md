@@ -69,8 +69,8 @@ export const BRIDE_MOTHER_ACCOUNT_NUMBER = "○○은행 ***-***-******";
 const executeScript = () => {
   const scriptTag = document.createElement("script");
   const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1652464367301",
-    "key" : "2a8fe",
+    "timestamp" : "1721888643134",
+    "key" : "2k6cg",
     "mapWidth" : "640",
     "mapHeight" : "360"
   }).render();`);

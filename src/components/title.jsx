@@ -6,13 +6,17 @@ import {
   GROOM_NAME,
   BRIDE_NAME,
 } from "../../config.js";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4";
+// import BackgroundVideo from "../assets/BackgroundVideo.mp4";
+import BackgroundVideo from "../assets/다우니.mp4";
 import GroovePaper from "../assets/GroovePaper.png";
 
 const Layout = styled.div`
   width: 70%;
   overflow: hidden;
   margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 `;
 
 const TitleWrapper = styled.div`
@@ -28,7 +32,8 @@ const TitleWrapper = styled.div`
 `;
 
 const VideoBackground = styled.video`
-  width: 100%;
+  width: 70%;
+  height: 70%;
 `;
 
 const WeddingInvitation = styled.p`
@@ -51,8 +56,8 @@ const Schedule = styled.p`
 `;
 const Title = () => {
   return (
-    <Layout>
-      <TitleWrapper>
+    <Layout >
+      <TitleWrapper >
         <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
         <GroomBride>
           {GROOM_NAME} &#38; {BRIDE_NAME}

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Layout } from "antd";
 import styled from "styled-components";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -28,16 +28,19 @@ const Wrapper = styled.div`
 `;
 
 const IndexPage = () => {
+
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
     script.src = "https://developers.kakao.com/sdk/js/kakao.min.js";
-    document.body.appendChild(script);
+    document.head.appendChild(script);
 
     return () => {
-      document.body.romoveChile(script);
+      document.head.romoveChile(script);
     };
   }, []);
+// [] -> 렌더링시 1회 실행
+// [something] -> something이 변할 때 마다, 렌더링 재실행
 
   useEffect(() => {
     AOS.init({
@@ -64,7 +67,7 @@ const IndexPage = () => {
           textAlign: "center",
         }}
       >
-        Copyright © 2022 Shin Jooyoung
+        
       </Footer>
     </Wrapper>
   );
